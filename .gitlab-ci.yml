@@ -1,0 +1,11 @@
+stages: [test, build]
+test:
+  image: haskell:9.6
+  script:
+    - cabal update
+    - cabal test
+build:
+  image: haskell:9.6
+  script:
+    - cabal update
+    - cabal build

@@ -1,0 +1,34 @@
+cabal-version: 3.0
+name: payroute
+version: 0.1.0.0
+build-type: Simple
+
+executable payroute
+  main-is: Main.hs
+  hs-source-dirs: app
+  default-language: Haskell2010
+  build-depends:
+      base >=4.14 && <5,
+      aeson,
+      bytestring,
+      containers,
+      http-types,
+      mtl,
+      random,
+      servant,
+      servant-server,
+      text,
+      time,
+      wai,
+      warp
+
+test-suite payroute-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  hs-source-dirs: tests
+  default-language: Haskell2010
+  build-depends:
+      base,
+      containers,
+      hspec,
+      QuickCheck

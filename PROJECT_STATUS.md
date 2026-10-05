@@ -1,0 +1,1 @@
+Portfolio implementation note: this repository is a runnable demonstration scaffold. Resume-scale production metrics (transaction volume, latency, uptime, user counts, etc.) are claims from the project specification and are not independently reproduced by the demo.
